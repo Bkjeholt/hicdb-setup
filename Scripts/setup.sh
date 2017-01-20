@@ -37,6 +37,12 @@ echo "    IP port:    ${MYSQL_PORT_3306_TCP_PORT} "
 echo "    User:       ${MYSQL_USER} "
 echo "    Password:   ${MYSQL_ENV_MYSQL_ROOT_PASSWORD} "
 echo "    Database:   ${MYSQL_ENV_MYSQL_DATABASE} "
+echo "----------------------------------------------------------------------------------"
+echo " Environment variables: "
+
+env
+
+echo "----------------------------------------------------------------------------------"
 echo " Setup info: "
 
 CreateDbInfo ${SQL_SETUP_TABLES_FILE_PATH}
