@@ -1,0 +1,23 @@
+{
+  "name" : "mysql-setup",
+  "version" : "1.1.1",
+  "main" : "./",
+  "author" : {
+    "name" : "Björn Kjeholt",
+    "email" : "dev@kjeholt.se"
+  },
+  "keywords" : [ ],
+  "licenses" : {
+    "type" : "mit"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/bkjeholt/mysql-setup.git"
+  },
+  "bugs" : {
+    "url" : "http://github.com/bkjeholt/mysql-setup/issues"
+  },
+  "license" : {
+    "type" : "mit"
+  }
+}

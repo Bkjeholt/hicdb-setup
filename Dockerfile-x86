@@ -1,0 +1,35 @@
+FROM debian:jessie
+
+MAINTAINER Björn Kjeholt <dev@kjeholt.se>
+
+#
+# Install required packages.
+#
+
+RUN apt-get -y update && \
+    apt-get -y install mysql-client \
+                       vim && \
+    mkdir -p /sql
+
+#
+# Install start script.
+#
+
+COPY Scripts /usr/local/bin/
+# COPY DatabaseSetup /backup/setups
+COPY sql /sql
+
+RUN chmod +rx /usr/local/bin/*.sh 
+
+#
+# Set container settings.
+#
+
+WORKDIR /backup
+
+#
+# Start process.
+#
+
+CMD ["/usr/local/bin/setup.sh"]
+
