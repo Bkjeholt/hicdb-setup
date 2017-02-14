@@ -7,5 +7,5 @@ The docker command to run is:
 docker run -it \
            --rm \
            --link <Mysql container name>:mysql \
-           bkjeholt/mysql-setup:<Tag>
+           bkjeholt/hicdb-setup:<Tag>
 ``` 
